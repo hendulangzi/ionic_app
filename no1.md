@@ -33,7 +33,7 @@ ionic2文档，一些指令基本跟1代类似，但用法有些变化，地址�
 
  
 
-问题一：因gradle下载不到导致编译失败
+# 问题一：因gradle下载不到导致编译失败
 编译的时候会遇到gradle下载不下来的问题，导致编译失败。
 
 解决办法：手动下载gradle，http://downloads.gradle.org/distributions/gradle-2.2.1-all.zip
@@ -41,25 +41,25 @@ ionic2文档，一些指令基本跟1代类似，但用法有些变化，地址�
 修改 appname\platforms\android\cordova\lib\builders 目录下的GradleBuilder.js，找到类似下面的地方：
 
 var distributionUrl = process.env['CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL'] || 'http\://services.gradle.org/distributions/gradle-2.2.1-all.zip';
- 
+
 
 修改为本地地址，我是放在了iis下面，改成了localhost。就能找到了。
 
  
 
-问题二：打包错误，提示Unable to start the daemon process.
+# 问题二：打包错误，提示Unable to start the daemon process.
 这个问题找了很多原因，有的说要改gradle.properties，也不管用，后来我删掉了D:\yourusername\.gradle文件夹，重新编译才过。如果失败一次的话，重新编译的话还是会失败，只能删掉重新来。
 
 以上这两个问题是打包到Cordova的时候遇到的，还有一些其他的问题就没记下来，比较大的原因就是网络没下载到某些文件所致。我们是已经有了一个Cordova的平台，只做里面的html5插件即可，所以打包这部分没再仔细研究。
 
  
 
-问题三：Click Delays 点击延迟问题
+# 问题三：Click Delays 点击延迟问题
 熟悉前端的应该都知道，某些元素在click事件会有300ms的延迟，在ionic里也是只有button和a可以立即响应的。如果要给其他的元素比如div增加click事件，给该元素加上tappable属性即可解决。
 
  
 
-问题四：http请求跨域问题
+# 问题四：http请求跨域问题
 在ionic2里使用angular2的HTTP请求api时，如果在浏览器里运行，经常会遇到跨域问题，比如：
 
 XMLHttpRequest cannot load http://www.xxx.com/clt/jsp/v3/channelContList.jsp?n=25950&WD-UUID=864819028898243&pageidx=1. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:8101' is therefore not allowed access.
@@ -72,7 +72,7 @@ Error code is:xhr_proxy?tinyhippos_apikey=ABC&tinyhippos_rurl=http%3A//localhost
 
  
 
-问题五：引用第三方js库的问题
+# 问题五：引用第三方js库的问题
 开发过程中不可避免的要用到第三方js库，如果直接在TypeScript里写的话，编译器是认不出来的，会报错，编译也通不过。外部的类必须要import进来才可以用。TypeScript需要一个声明文件 d.ts来知道第三方库的接口。可参考 https://zhongsp.gitbooks.io/typescript-handbook/content/doc/handbook/Writing%20Definition%20Files.html
 
 如果用流行的库的话，不用我们自己写d.ts，有个开源的项目已经做好了：https://github.com/yanxiaodi/DefinitelyTyped
@@ -86,7 +86,7 @@ tsc --declaration my.ts来生成，这个命令是给ts文件生成声明的，�
 
  
 
-问题六：开发模式选择
+# 问题六：开发模式选择
 这个问题只是我做的项目的特殊情况，可能大部分人遇不到。我们的平台封装了Cordova的http请求，调用api必须用指定的方法才可以。但在chrome里调试的时候是加载不到Cordova的，于是我想了一个办法，增加一个全局的isDebug变量，封装一个全局的http方法，在debug模式时调用angular2的HTTP来请求，正式运行时才用Cordova的。其他的service都要调用这个方法，就无需关注是什么模式了，如果真机运行的话就改一下isDebug的值就可以了。
 
  放一段代码：
@@ -151,7 +151,7 @@ angular2的http是用的Promise，但平台提供的方法用的callback，于�
 
  
 
-问题七：单例模式
+#  问题七：单例模式
 单例是经常用到的，我参考一个老外的代码用了一个单例，用来保存一些全局变量：
 
 复制代码
