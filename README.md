@@ -4,4 +4,4 @@
 * 2、[angular中文文档](https://angular.cn/docs/ts/latest/quickstart.html)
 * 3、[TypeScript文档](https://www.gitbook.com/book/zhongsp/typescript-handbook/details)
 * 4、[ionic2文档](http://ionicframework.com/docs/v2/)
- 
+ ### ionic 创建文件ionic g page orderDetail --pagesDir src/pages/xxx/
