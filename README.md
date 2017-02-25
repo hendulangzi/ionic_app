@@ -6,5 +6,5 @@
 * 4、[ionic2文档](http://ionicframework.com/docs/v2/)
 * 5、[Ionic2入坑基础教程和安装指南](http://www.open-open.com/lib/view/open1476256273813.html)
 * 6、[理解ionic2 + angular2开发方案](http://www.tuicool.com/articles/JZJBBjr)
-
+* 7、[Ionic打包过程下载Gradle失败的解决方法](http://blog.csdn.net/leishi8819/article/details/52601113)
  ###ionic 创建文件ionic g page orderDetail --pagesDir src/pages/xxx/
