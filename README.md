@@ -8,4 +8,6 @@
 * 6、[理解ionic2 + angular2开发方案](http://www.tuicool.com/articles/JZJBBjr)
 * 7、[Ionic打包过程下载Gradle失败的解决方法](http://blog.csdn.net/leishi8819/article/details/52601113)
 * 8、[android 离线包下载地址  有最新的sdk22和sdk23](http://mirrors.neusoft.edu.cn/android/repository/)
- ###ionic 创建文件ionic g page orderDetail --pagesDir src/pages/xxx/
+* 9、[android开发环境集成版 adt下载](http://bbs.phonegap100.com/thread-1456-1-1.html)
+
+ ### ionic 创建文件ionic g page orderDetail --pagesDir src/pages/xxx/
