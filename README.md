@@ -14,4 +14,4 @@
 
 ### ionic 创建文件ionic g page orderDetail --pagesDir src/pages/xxx/
 
-## ionc2 拍照实现中，错误提示：cordova not avalable，解决方案为更新cordova的版本到5.0以上，最好是更新到最新版本
+## ionc2 拍照实现中，错误提示：cordova not avalable，解决方案为更新cordova的版本到5.0以上，最好是更新到最新版本,同时只有在手机上或者模拟机上运行才能调出摄像头。
