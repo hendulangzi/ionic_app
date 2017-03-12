@@ -13,8 +13,7 @@
 * 10、[(ngcordova文档)获取通讯录里的信息](http://ngcordova.com/docs/plugins/contacts/)
 * 11、[ionic实用功能->—点击拨打电话功能](http://www.ionic.ren/2016/01/15/ionic%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%AB-%E7%82%B9%E5%87%BB%E6%8B%A8%E6%89%93%E7%94%B5%E8%AF%9D%E5%8A%9F%E8%83%BD/)
 * 12、[Cannot read property 'substr' of undefined] 找到remainingLines[0] 替换为remainingLines[0]||""
-
-
+* 13、[ionic2跨域问题](http://www.jianshu.com/p/a57e5d0345ce)
 
 
 
