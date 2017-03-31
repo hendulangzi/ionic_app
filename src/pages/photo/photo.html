@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-icon style="margin-left: 30%">添加到主屏</ion-icon>
+    <ion-icon style="float: right;margin-right: 2rem;" (click)="desk()">...</ion-icon>
+    <ion-buttons start style="display: none">
+      <button ion-button icon-only>
+        <ion-icon name='contact'></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end style="display:none;">
+      <button ion-fab color="danger">
+        <ion-icon name='md-share'></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="buttons-components-page">
+  <ion-item>
+    <button ion-item (click)="share(null,null, 'http://www.baidu.com/img/bdlogo.gif', null)">message, subject, image and link</button>
+  </ion-item>
+  <ion-card>
+    <ion-card-content>
+      <img src="{{userInfo.img}}" style="width:30vh;height:30vh;"/>
+    </ion-card-content>
+
+    <ion-item>
+      <button ion-button clear item-left><a href="tel:{{userInfo.tel}}">拨打电话</a></button>
+      <button ion-button clear item-right><span class="bcdzp">保存到主屏</span></button>
+    </ion-item>
+  </ion-card>
+
+  <ion-list>
+    <ion-item style="font-size:2rem;">
+      姓名：{{userInfo.username}}
+    </ion-item>
+    <ion-item style="font-size:2rem;">
+      电话：{{userInfo.tel}}
+    </ion-item>
+  </ion-list>
+  <ion-card>
+    <ion-card-header>
+      温馨提示
+    </ion-card-header>
+    <ion-card-content>
+      点击右上角三个点，创建快捷桌面
+    </ion-card-content>
+  </ion-card>
+</ion-content>

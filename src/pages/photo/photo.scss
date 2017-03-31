@@ -1,0 +1,31 @@
+page-photo {
+  .buttons-components-page {
+
+    ion-card {
+      margin-bottom: 2em;
+    }
+
+    ion-card-content {
+      background-color: #F4F5F8;
+    }
+
+    ion-card img {
+      width: auto;
+      height: 104px;
+      display: block;
+      margin: 10px auto;
+    }
+    a{
+      font-size: 2rem;
+    }
+    .bcdzp{
+      font-size: 2rem;
+    }
+  }
+  .font-size{
+    font-size: 1.2rem;
+  }
+  .img-size{
+    width:30vh;height:30vh;
+  }
+}

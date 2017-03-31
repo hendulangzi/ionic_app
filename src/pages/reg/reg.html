@@ -1,0 +1,51 @@
+<!--
+  Generated template for the Reg page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>注册</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <form (ngSubmit)="reg()" #regForm="ngForm">
+    <ion-list inset>
+
+      <ion-item>
+        <ion-label>用户名</ion-label>
+        <ion-input type="text" [(ngModel)]="userInfo.userName" name="userName" min="3" max="15" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>密码</ion-label>
+        <ion-input type="password" [(ngModel)]="userInfo.password" name="password" max="30"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>验证码</ion-label>
+          <ion-input type="text" [(ngModel)]="userInfo.smscode" name="smscode" max="6" required></ion-input>
+        <ion-icon item-right>
+          <button ion-button>重新发送</button>
+        </ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>邀请码</ion-label>
+        <ion-input type="text" [(ngModel)]="userInfo.regcode" name="regcode"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <div padding>
+      <button ion-button color="primary" block type="submit" [class.unactive]="!regForm.form.valid" >注册</button>
+      <a href="#" (click)="sign()" style="float: right;font-size:2rem;">登陆</a>
+    </div>
+    </form>
+</ion-content>
