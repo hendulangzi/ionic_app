@@ -29,3 +29,6 @@
 
 # ionic 装不上，提示什么uuid used 
   修改C:\Users\Administrator\.npmrc 把内容清空
+  
+ # ionic 创建项目
+  http://ionicframework.com/docs/cli/start/
