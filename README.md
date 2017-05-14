@@ -26,3 +26,6 @@
 
 
 # 编译安装html: npm run build
+
+# ionic 装不上，提示什么uuid used 
+  修改C:\Users\Administrator\.npmrc 把内容清空
