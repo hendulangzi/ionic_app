@@ -33,3 +33,5 @@
   
  # ionic 创建项目
   http://ionicframework.com/docs/cli/start/
+ # ios 安装
+  cordova add ios 无法安装时，cordova 版本改为4.0.0或低版本
