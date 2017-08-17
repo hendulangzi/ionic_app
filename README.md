@@ -41,3 +41,5 @@
   https://github.com/npm/npm/issues/16861
  # ios 调试
  http://blog.csdn.net/svygh123/article/details/51218886
+ # ios模拟器不能用键盘输入怎么解决
+  让我想起了hello world 。选中模拟器然后看在MAC机上方模拟器菜单“Hardware”---“keyboard”---“Connect Hardware Keyboard”。勾选一下。就可以取消和键盘的关联。
