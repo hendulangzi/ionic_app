@@ -37,5 +37,7 @@
   cordova add ios 无法安装时，cordova 版本改为4.0.0或低版本
  # 发布并检查代码
   npm run build --prod
- # npm 安装失败解决办法 npm cache verify
+ # npm 安装失败解决办法 1：npm cache verify ，2：npm cache clean
   https://github.com/npm/npm/issues/16861
+ # ios 调试
+ http://blog.csdn.net/svygh123/article/details/51218886
