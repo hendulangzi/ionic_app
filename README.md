@@ -45,4 +45,5 @@
   让我想起了hello world 。选中模拟器然后看在MAC机上方模拟器菜单“Hardware”---“keyboard”---“Connect Hardware Keyboard”。勾选一下。就可以取消和键盘的关联。
   # 处理ionic项目中，输入框的光标不自动定位，键盘不弹出的问题
   (https://my.oschina.net/SZQing/blog/710940)
+  keybord:(https://github.com/ionic-team/ionic-plugin-keyboard)
   
