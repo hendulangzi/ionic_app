@@ -46,4 +46,6 @@
   # 处理ionic项目中，输入框的光标不自动定位，键盘不弹出的问题
   [点击](https://my.oschina.net/SZQing/blog/710940)
   [keybord](https://github.com/ionic-team/ionic-plugin-keyboard)
+  # Error: Uncaught (in promise): Error: Cannot find module 
+    cnpm 安装改为npm就没问题
   
