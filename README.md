@@ -48,4 +48,18 @@
   [keybord](https://github.com/ionic-team/ionic-plugin-keyboard)
   # Error: Uncaught (in promise): Error: Cannot find module 
     cnpm 安装改为npm就没问题
-  
+  # ionic 统一UI模式 
+   在app.module.ts 中 NgModule-》imports =》IonicModule.forRoot(MyApp, {=》加上mode: 'ios',
+   如下：
+   
+    <code>
+    imports: [
+         BrowserModule,
+        HttpModule,
+        IonicStorageModule.forRoot(),
+        IonicModule.forRoot(MyApp, {
+          backButtonText: '',
+          mode: 'ios',
+        }),
+      ],
+    </code>
