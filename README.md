@@ -64,7 +64,7 @@
       ],
     </code>
 
-  # 刷新页面退出问题 ，修改.npmrc内容，从新
+  # 刷新页面退出问题 ，修改.npmrc内容，重新npm install
   
  registry=https://registry.npm.taobao.org/
  
