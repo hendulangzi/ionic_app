@@ -65,6 +65,10 @@
     </code>
 
   # 刷新页面退出问题 ，修改.npmrc内容，从新
+  
  registry=https://registry.npm.taobao.org/
+ 
  disturl=https://npm.taobao.org/dist
+ 
  sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+ 
