@@ -72,3 +72,5 @@
  
  sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
  
+ # ionic 压缩打包 ionic build --prod
+ 
